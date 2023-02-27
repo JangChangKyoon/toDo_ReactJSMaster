@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function ToDoList() {
+/* function ToDoList() {
   const [toDo, setToDo] = useState("");
   const [toDoError, setToDoError] = useState("");
   const onChange = (event: React.FormEvent<HTMLInputElement>) => {
@@ -26,6 +26,6 @@ function ToDoList() {
       </form>
     </div>
   );
-}
+} */
 
 export default ToDoList;
