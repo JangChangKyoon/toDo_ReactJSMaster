@@ -36,6 +36,7 @@ interface IForm {
   username: string;
   password: string;
   password1: string;
+  extraError?: string;
 }
 
 function ToDoList() {
@@ -57,7 +58,7 @@ function ToDoList() {
         { shouldFocus: true }
       );
     }
-    // setError("extraError", { message: "Server offline." });
+    setError("extraError", { message: "Server offline." });
   };
   return (
     <div>
@@ -108,6 +109,7 @@ function ToDoList() {
         />
         <span>{errors?.password1?.message}</span>
         <button>Add</button>
+        <span>{errors?.extraError?.message}</span>
       </form>
     </div>
   );
